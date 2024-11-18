@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  python:
+    image: sudheer374/pythonlife:v2
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+  movies:
+    image: sudheer374/pymovies:v2
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
+  dth:
+    image: sudheer374/pymydth:v2
+    ports:
+      - "84:80"
+    deploy:
+      replicas: 3
+
+
